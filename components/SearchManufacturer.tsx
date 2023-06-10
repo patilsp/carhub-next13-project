@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 
-import { manufacturers } from "../constants";
+import { manufacturers } from "@/constants";
 import { SearchManuFacturerProps } from "@types";
 
 const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacturerProps) => {
@@ -58,7 +58,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
                   value={query}
                   className='search-manufacturer__option'
                 >
-                  Create "{query}"
+                  Create
                 </Combobox.Option>
               ) : (
                 filteredManufacturers.map((item) => (
